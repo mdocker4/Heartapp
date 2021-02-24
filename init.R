@@ -1,9 +1,4 @@
-# init.R
-#
-# Example R code to install packages if not already installed
-#
-
-my_packages = c("randomForest", "data.table","ggplot2","cowplot","caret","RCurl","readr","shiny","shinythemes")
+my_packages = c("randomForest", "data.table","readr","shiny","shinythemes")
 
 install_if_missing = function(p) {
   if (p %in% rownames(installed.packages()) == FALSE) {
