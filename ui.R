@@ -17,9 +17,9 @@ shinyUI(fluidPage(theme=shinytheme("superhero"),
                       sliderInput("age","Age:",
                                   min=20,max=100,
                                   value=65),
-                      radioButtons(
+                      selectInput(
                           "sex",
-                          "Gender:",
+                          label = "Gender:",
                           choices = list("Male"="1","Female"="0"),
                           selected = "Male"),
                       selectInput("cp",label = "Chest Pain Level:",
