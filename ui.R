@@ -4,6 +4,9 @@ library(data.table)
 library(randomForest)
 library(readr)
 
+
+HeartData<- read.csv("heart.csv", header = TRUE)
+
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(theme=shinytheme("superhero"),
                   #Page Header
