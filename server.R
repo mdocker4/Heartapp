@@ -4,6 +4,8 @@ library(data.table)
 library(randomForest)
 library(readr)
 
+model <- readRDS("BestRFHDModel.rds")
+
 # Define server logic required to draw a histogram
 shinyServer(function(input,output,session){
     
